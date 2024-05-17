@@ -21,9 +21,6 @@ export class VisitaComponent {
     let password = prompt('Contraseña:');
 
     if (password === this._visitasApiService.password) {
-      this._visitasApiService.logged = true;
-      console.log(this._visitasApiService.logged);
-
       this._router.navigate(['/visitas', this.visita.id]);
     } else {
       alert('Contraseña Incorrecta')

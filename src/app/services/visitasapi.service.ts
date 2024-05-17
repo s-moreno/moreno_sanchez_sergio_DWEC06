@@ -8,7 +8,6 @@ export class VisitasApiService {
 
   public url: string;
   public password: string = 'dwec';
-  public logged: boolean = false;
 
   constructor(private _http: HttpClient) {
     this.url = 'https://6646fe2151e227f23ab0912d.mockapi.io/api/comments/';
